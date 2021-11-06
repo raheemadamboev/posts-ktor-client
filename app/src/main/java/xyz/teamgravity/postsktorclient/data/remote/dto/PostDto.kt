@@ -15,7 +15,6 @@ fun PostDto.toPost(): PostModel {
     return PostModel(
         body = body,
         title = title,
-        id = id,
         userId = userId
     )
 }
