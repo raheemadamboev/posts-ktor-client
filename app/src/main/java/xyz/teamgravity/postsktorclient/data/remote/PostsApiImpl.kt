@@ -4,7 +4,6 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import io.ktor.http.*
 import xyz.teamgravity.postsktorclient.data.remote.dto.PostDto
-import xyz.teamgravity.postsktorclient.domain.model.PostModel
 
 class PostsApiImpl(private val client: HttpClient) : PostsApi {
 

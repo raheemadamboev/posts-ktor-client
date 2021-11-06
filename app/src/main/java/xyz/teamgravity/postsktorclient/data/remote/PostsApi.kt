@@ -1,7 +1,6 @@
 package xyz.teamgravity.postsktorclient.data.remote
 
 import xyz.teamgravity.postsktorclient.data.remote.dto.PostDto
-import xyz.teamgravity.postsktorclient.domain.model.PostModel
 
 interface PostsApi {
 
