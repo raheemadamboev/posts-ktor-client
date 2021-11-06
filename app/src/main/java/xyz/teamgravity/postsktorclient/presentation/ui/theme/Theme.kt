@@ -1,4 +1,4 @@
-package xyz.teamgravity.postsktorclient.ui.theme
+package xyz.teamgravity.postsktorclient.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

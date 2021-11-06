@@ -14,7 +14,7 @@
         android:theme="@style/Theme.PostsKtorClient"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.PostsKtorClient.NoActionBar">

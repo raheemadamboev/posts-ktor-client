@@ -1,4 +1,4 @@
-package xyz.teamgravity.postsktorclient.ui.theme
+package xyz.teamgravity.postsktorclient.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
