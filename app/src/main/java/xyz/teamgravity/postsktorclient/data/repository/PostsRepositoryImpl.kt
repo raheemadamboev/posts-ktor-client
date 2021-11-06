@@ -11,7 +11,7 @@ import xyz.teamgravity.postsktorclient.domain.repository.PostsRepository
 
 class PostsRepositoryImpl(private val api: PostsApi) : PostsRepository {
 
-    override suspend fun getPosts(): Flow<Resource<List<PostModel>>> = flow {
+    override fun getPosts(): Flow<Resource<List<PostModel>>> = flow {
         try {
             emit(Resource.Loading())
             val posts = api.getPosts().map { it.toPost() }
@@ -21,7 +21,7 @@ class PostsRepositoryImpl(private val api: PostsApi) : PostsRepository {
         }
     }
 
-    override suspend fun postPost(post: PostDto): Flow<Resource<PostDto>> = flow {
+    override fun postPost(post: PostDto): Flow<Resource<PostDto>> = flow {
         try {
             emit(Resource.Loading())
             val postResult = api.postPost(post)!!

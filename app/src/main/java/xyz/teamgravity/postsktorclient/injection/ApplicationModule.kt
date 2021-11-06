@@ -11,6 +11,8 @@ import io.ktor.client.features.json.serializer.*
 import io.ktor.client.features.logging.*
 import xyz.teamgravity.postsktorclient.data.remote.PostsApi
 import xyz.teamgravity.postsktorclient.data.remote.PostsApiImpl
+import xyz.teamgravity.postsktorclient.data.repository.PostsRepositoryImpl
+import xyz.teamgravity.postsktorclient.domain.repository.PostsRepository
 import javax.inject.Singleton
 
 @Module
@@ -33,5 +35,6 @@ object ApplicationModule {
     @Singleton
     fun providePostsApi(client: HttpClient): PostsApi = PostsApiImpl(client)
 
-
+    @Provides
+    fun providePostsRepository(api: PostsApi): PostsRepository = PostsRepositoryImpl(api)
 }

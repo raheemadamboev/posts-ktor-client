@@ -7,7 +7,7 @@ import xyz.teamgravity.postsktorclient.domain.model.PostModel
 
 interface PostsRepository {
 
-    suspend fun getPosts(): Flow<Resource<List<PostModel>>>
+    fun getPosts(): Flow<Resource<List<PostModel>>>
 
-    suspend fun postPost(post: PostDto): Flow<Resource<PostDto>>
+    fun postPost(post: PostDto): Flow<Resource<PostDto>>
 }
