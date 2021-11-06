@@ -1,7 +1,7 @@
 # posts-ktor-client
 Jetpack Compose app gets data from REST API using KTOR Client. Clean Architecture, Dependency Injection...
 
-**Random Footballer**
+**Posts KTOR Client**
 
 <a href="https://github.com/raheemadamboev/posts-ktor-client/blob/master/app-debug.apk">Demo app</a> 
 
