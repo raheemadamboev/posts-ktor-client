@@ -21,3 +21,4 @@ Basic android app that UI is built by Jetpack Compose. Gets data from <a href="h
 - Git
 - KTOR Client
 - Kotlin Serialization
+- Kotlin Flow
